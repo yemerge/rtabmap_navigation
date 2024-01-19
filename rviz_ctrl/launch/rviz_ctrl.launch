@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="your_package" type="your_node" name="node_name">
+        <param name="binary_file_path" value="/path/to/your/binary/file" />
+  </node>
+</launch>
