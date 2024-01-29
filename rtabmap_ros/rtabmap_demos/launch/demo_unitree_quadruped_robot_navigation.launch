@@ -108,12 +108,12 @@
         <arg name="odom_frame" value="$(arg odom_frame)"/>
         <arg name="scan" value="$(arg rname)_gazebo/scan"/>
         <remap from="/scan" to="/faceLaserScan"/>
-    </include>
+            </include>
 
     <!-- Calls navigation stack packages -->
     <include file="$(find unitree_move_base)/launch/move_base.launch">
         <!-- <arg name="frame_prefix" value="$(arg frame_prefix)"/> -->
-        <arg name="rname"   value="$(arg rname)"/>
+        <!-- <arg name="rname"   value="$(arg rname)"/> -->
     </include>
 
     <!-- <include file="$(find unitree_move_base)/launch/move_base.launch"/> -->
