@@ -45,6 +45,9 @@
   </node>
   </group>
 
+  <!-- Uncomment if you want to convert PointCloud2 data from the three depth cameras to LaserScan -->
+  <include file="$(find unitree_move_base)/launch/pointCloud2LaserScan.launch"/>
+
   <!-- Calls navigation stack packages -->
   <include file="$(find unitree_move_base)/launch/move_base.launch">
   </include>
